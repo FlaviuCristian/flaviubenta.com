@@ -2,3 +2,7 @@ body {
   background-image: url('/resources/images/background.png');
   background-repeat: repeat;
 }
+
+.link-without-underline {
+  text-decoration: none;
+}
