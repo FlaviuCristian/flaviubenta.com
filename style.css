@@ -1,11 +1,37 @@
 body {
   background-image: url('/resources/images/background.jpg');
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-position: center center;
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  header, main, footer {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+}
+
+/* Styles for smaller screens (mobile) */
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  header, main, footer {
+    padding: 15px;
+    margin: 5px;
+  }
+}
+
 
 .link-without-underline {
   text-decoration: none;
