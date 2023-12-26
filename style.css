@@ -7,44 +7,29 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Styles for larger screens */
-@media (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-
-  header, main, footer {
-    padding: 20px;
-    margin: 10px;
-    border-radius: 5px;
-  }
-}
-
-/* Styles for smaller screens (portrait mode) */
-@media (max-width: 767px) and (orientation: portrait) {
-  body {
-    font-size: 14px;
-  }
-
-  header, main, footer {
-    padding: 15px;
-    margin: 5px;
-  }
-}
-
-/* Styles for smaller screens (landscape mode) */
-@media (max-width: 767px) and (orientation: landscape) {
-  body {
-    font-size: 14px;
-  }
-
-  header, main, footer {
-    padding: 15px;
-    margin: 5px;
-  }
-}
-
-
 .link-without-underline {
   text-decoration: none;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+} 
