@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .navbar {
@@ -350,6 +351,9 @@ aici se termina filtrele */
     font-size: 16px;
 }
 
+
+/* Stil pentru footer */
+
 footer {
     background-color: rgba(0, 0, 0, 0.7);
     /* Fundal negru semi-transparent */
@@ -359,12 +363,31 @@ footer {
     /* Centrat pe orizontală */
     padding: 10px;
     /* Spatiu în jurul textului */
-    position: absolute;
-    /* Poziționează footer-ul la baza paginii */
+    position: fixed;
+    /* Face footer-ul fixat */
     bottom: 0;
-    /* Asigură-te că rămâne jos */
+    /* Poziționează-l la baza paginii */
+    left: 0;
+    /* Asigură-te că footer-ul începe de la marginea stângă */
     width: 100%;
     /* Lățimea să fie completă */
     font-size: 14px;
     /* Dimensiune font mai mică */
+    z-index: 10;
+    /* Asigură-te că footer-ul este deasupra conținutului */
+}
+
+
+/* Adăugăm un spațiu pentru a preveni suprapunerea cu conținutul paginii */
+
+
+/* Optimizare pentru mobil */
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 12px;
+        /* Dimensiune font mai mică pe mobil */
+        padding: 8px;
+        /* Mai puțin spațiu pe mobil */
+    }
 }
