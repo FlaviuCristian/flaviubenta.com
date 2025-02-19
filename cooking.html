@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Meniu de navigare -->
+    <div class="navbar">
+        <div class="menu-container">
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="cooking.html">Cooking</a>
+                <a href="travel.html">Travel</a>
+            </div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search...">
+            <button id="search-btn">🔍</button>
+        </div>
+    </div>
+
+    <!-- Container principal pentru layout -->
+    <div class="content-container">
+        <!-- Container pentru rețete -->
+        <div class="recipes-container">
+            <div class="recipe" data-category="vegan" data-type="lunch">
+                <h2 class="recipe-title">Quinoa Salad</h2>
+                <p>Ingrediente: quinoa, roșii, castraveți, lămâie.</p>
+            </div>
+            <div class="recipe" data-category="meat" data-type="dinner">
+                <h2 class="recipe-title">Grilled Chicken</h2>
+                <p>Ingrediente: piept de pui, condimente, usturoi.</p>
+            </div>
+            <div class="recipe" data-category="dessert" data-type="snack">
+                <h2 class="recipe-title">Tiramisu</h2>
+                <p>Ingrediente: pișcoturi, cafea, mascarpone, cacao.</p>
+            </div>
+            <div class="recipe" data-category="vegan" data-type="lunch">
+                <h2 class="recipe-title">Quinoa Salad</h2>
+                <p>Ingrediente: quinoa, roșii, castraveți, lămâie.</p>
+            </div>
+            <div class="recipe" data-category="meat" data-type="dinner">
+                <h2 class="recipe-title">Grilled Chicken</h2>
+                <p>Ingrediente: piept de pui, condimente, usturoi.</p>
+            </div>
+            <div class="recipe" data-category="dessert" data-type="snack">
+                <h2 class="recipe-title">Tiramisu</h2>
+                <p>Ingrediente: pișcoturi, cafea, mascarpone, cacao.</p>
+            </div>
+            <div class="recipe">
+                <h2 class="recipe-title">Pizza Margherita</h2>
+                <p>Ingrediente: făină, apă, drojdie, sos de roșii, mozzarella, busuioc.</p>
+            </div>
+            <div class="recipe">
+                <h2 class="recipe-title">Paste Carbonara</h2>
+                <p>Ingrediente: paste, ouă, guanciale, pecorino romano, piper.</p>
+            </div>
+            <div class="recipe">
+                <h2 class="recipe-title">Tiramisu</h2>
+                <p>Ingrediente: pișcoturi, cafea, mascarpone, ouă, zahăr, cacao.</p>
+            </div>
+            <div class="recipe" data-category="vegan" data-type="lunch">
+                <h2 class="recipe-title">Quinoa Salad</h2>
+                <p>Ingrediente: quinoa, roșii, castraveți, lămâie.</p>
+            </div>
+            <div class="recipe" data-category="meat" data-type="dinner">
+                <h2 class="recipe-title">Grilled Chicken</h2>
+                <p>Ingrediente: piept de pui, condimente, usturoi.</p>
+            </div>
+            <div class="recipe" data-category="dessert" data-type="snack">
+                <h2 class="recipe-title">Tiramisu</h2>
+                <p>Ingrediente: pișcoturi, cafea, mascarpone, cacao.</p>
+            </div>
+            <div class="recipe">
+                <h2 class="recipe-title">Pizza Margherita</h2>
+                <p>Ingrediente: făină, apă, drojdie, sos de roșii, mozzarella, busuioc.</p>
+            </div>
+            <div class="recipe">
+                <h2 class="recipe-title">Paste Carbonara</h2>
+                <p>Ingrediente: paste, ouă, guanciale, pecorino romano, piper.</p>
+            </div>
+            <div class="recipe">
+                <h2 class="recipe-title">Tiramisu</h2>
+                <p>Ingrediente: pișcoturi, cafea, mascarpone, ouă, zahăr, cacao.</p>
+            </div>
+        </div>
+
+        <!-- Container pentru filtre -->
+        <div class="filters-container">
+            <h3>Filtrează Rețetele</h3>
+            <label for="food-category">Food Category:</label>
+            <select id="food-category">
+                <option value="all">All</option>
+                <option value="vegan">Vegan</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="raw-vegan">Raw Vegan</option>
+                <option value="gluten-free">Gluten Free</option>
+                <option value="meat">Meat</option>
+            </select>
+
+            <label for="meal-type">Type:</label>
+            <select id="meal-type">
+                <option value="all">All</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+                <option value="snack">Snack</option>
+                <option value="dessert">Dessert</option>
+            </select>
+
+            <button id="filter-btn">Filter</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Flaviu Benta. Toate drepturile rezervate.</p>
+    </footer>
+
+</body>
+
+</html>

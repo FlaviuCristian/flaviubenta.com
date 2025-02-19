@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="cooking.html">Cooking</a>
+            <a href="travel.html">Travel</a>
+        </div>
+    </div>
+
+    <h1>Search Results</h1>
+    <div id="search-results"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const params = new URLSearchParams(window.location.search);
+            const searchQuery = params.get("query");
+            document.getElementById("search-results").innerHTML = `<p>Results for: <b>${searchQuery}</b></p>`;
+
+            // Simulare căutare în conținut (poți extinde asta cu un backend)
+            const allRecipes = document.querySelectorAll(".recipe");
+            let results = [];
+
+            allRecipes.forEach(recipe => {
+                if (recipe.innerText.toLowerCase().includes(searchQuery)) {
+                    results.push(recipe.outerHTML);
+                }
+            });
+
+            document.getElementById("search-results").innerHTML += results.length ?
+                results.join("") :
+                "<p>No results found.</p>";
+        });
+    </script>
+
+</body>
+
+</html>
